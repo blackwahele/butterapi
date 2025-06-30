@@ -1,0 +1,337 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- Charset -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Mobile Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" />
+    <!-- Title -->
+    <title>Inquiry Received</title>
+    <!-- Facicon -->
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+
+    <style>
+        /* ----------- */
+        /* -- Reset -- */
+        /* ----------- */
+        @font-face {
+            font-family: 'Avenir Roman';
+            src: url('Avenir-Font/AvenirLTStd-Book.otf');
+        }
+
+        @font-face {
+            font-family: 'Avenir Roman';
+            src: url('Avenir-Font/AvenirLTStd-Roman.otf');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            mso-padding-alt: 0;
+            mso-margin-top-alt: 0;
+            width: 100% !important;
+            height: 100% !important;
+            mso-margin-bottom-alt: 0;
+            background-color: #fafafa;
+            font-family: 'Avenir Roman';
+        }
+
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote,
+        span {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-family: 'Avenir Roman';
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+            font-family: 'Avenir Roman';
+        }
+
+        img,
+        a img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            font-family: 'Avenir Roman';
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Avenir Roman';
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+            font-family: 'Avenir Roman';
+        }
+
+        #outlook a {
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ---------------- */
+        /* -- Responsive -- */
+        /* ---------------- */
+        @media only screen and (max-width: 620px) {
+            #foxeslab-email .table1 {
+                width: 91% !important;
+            }
+
+            #foxeslab-email .table1-2 {
+                width: 98% !important;
+            }
+
+            #foxeslab-email .table1-3 {
+                width: 98% !important;
+            }
+
+            #foxeslab-email .table1-4 {
+                width: 98% !important;
+            }
+
+            #foxeslab-email .tablet_no_float {
+                clear: both;
+                width: 100% !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+            }
+
+            #foxeslab-email .tablet_wise_float {
+                clear: both;
+                float: none !important;
+                width: auto !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+            }
+
+            #foxeslab-email .tablet_hide {
+                display: none !important;
+            }
+
+            #foxeslab-email .image1 {
+                width: 100% !important;
+            }
+
+            #foxeslab-email .image1-290 {
+                width: 100% !important;
+                max-width: 290px !important;
+            }
+
+            .center_content {
+                text-align: center !important;
+            }
+
+            .center_button {
+                width: 50% !important;
+                margin-left: 25% !important;
+                max-width: 300px !important;
+            }
+        }
+
+        @media only screen and (max-width: 479px) {
+            #foxeslab-email .table1 {
+                width: 98% !important;
+            }
+
+            #foxeslab-email .no_float {
+                clear: both;
+                width: 100% !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+            }
+
+            #foxeslab-email .wise_float {
+                clear: both;
+                float: none !important;
+                width: auto !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+            }
+
+            #foxeslab-email .mobile_hide {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container_400 {
+                width: 95%;
+            }
+        }
+
+        /* Order Table Css */
+        #orderTable {
+            width: 100%;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        #orderTable tbody tr td {
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .trtd-13 td {
+            font-size: 13px;
+            border: none;
+        }
+
+        .hr-border {
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            border: 0;
+            width: 60%;
+            border-top: 1px solid #eee;
+            border-image: linear-gradient(to left, rgb(255, 255, 255) 1%, rgb(35 40 45) 50%, rgb(255, 255, 255) 100%) 0 0 100% 0/0 0 3px 0 stretch;
+        }
+
+        .text-right-tbl {
+            padding-left: 15px;
+            line-height: 2;
+        }
+        .wish-img{
+            width:70px;
+            height:70px;
+        }
+    </style>
+</head>
+<!-- /head -->
+
+<body style="padding: 0;margin: 0;" id="foxeslab-email">
+    <!-- Section-2 -->
+    <table class="table_full editable-bg-color bg_color_e6e6e6 editable-bg-image" width="100%" align="center"
+        mc:repeatable="castellab" mc:variant="Header" cellspacing="0" cellpadding="0" border="0"
+        style="margin-top:15px;margin-bottom:15px;table-layout: fixed;background: #986e5e;box-shadow: 0px 2px 14px rgb(0 0 0 / 15%);">
+        <tbody style="background-color: #e6e6e6;">
+            <!-- Header -->
+            <tr>
+                <td>
+                    <!-- container -->
+                    <table class="table1 editable-bg-color bg_color_303f9f" bgcolor="#ffffff" width="600"
+                        align="center" border="0" cellspacing="0" cellpadding="0"
+                        style="margin: 0 auto;border-bottom: 1px solid #222e3c">
+                        <!-- padding-top -->
+                        <tr>
+                            <td height="25"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Inner container -->
+                                <table class="table1" width="520" align="center" border="0" cellspacing="0"
+                                    cellpadding="0" style="margin: 0 auto;text-align: center;">
+                                    <tr>
+                                        <td>
+                                            <!-- logo -->
+                                            <table width="50%" align="center" border="0" cellspacing="0"
+                                                cellpadding="0">
+                                                <tr>
+                                                    <td align="center">
+                                                       
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- END logo -->
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- END inner container -->
+                            </td>
+                        </tr>
+                        <!-- padding-bottom -->
+                    </table>
+                    <!-- END container -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- container -->
+                    <table class="table1" width="600" align="center" border="0" cellspacing="0" cellpadding="0"
+                        style="margin: 0 auto;background-color: #222e3c;color: #3c3c3c;border-top: 1px solid #ededed;box-shadow: inset 0px 2px 5px rgb(0 0 0 / 15%);">
+                        <tr>
+                            <td>
+                                <!--  column-1 -->
+                                <table class="table1-2" align="center" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td height="10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td mc:edit="text003" align="center" class="text_color_282828"
+                                            style="color: #ffffff; font-size: 13px; line-height: 2; font-weight: 500; font-family: lato, Helvetica, sans-serif; mso-line-height-rule: exactly;">
+                                            <div class="editable-text" style="line-height: 2;">
+                                                <span class="text_container">
+                                                    <p>                                                      
+                                                        Nilkanth Diamond
+                                                    </p>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- END column-1 -->
+                            </td>
+                        </tr>
+                       
+                        <!-- padding-bottom -->
+                        <tr>
+                            <td height="20"></td>
+                        </tr>
+                    </table>
+                    <!-- END container -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            <!-- END wrapper -->
+</body>
+</html>
