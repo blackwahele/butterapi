@@ -17,7 +17,7 @@ const PASSWORD_REGEX =  /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]
 const PHONE_REGEX = /^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$/;
 
 // Your AccountSID and Auth Token from console.twilio.com
-const TWILIO_ACOUNT_SID = "ACce1cc84b7b9e5d3d1f54beeaa1b9cb7c";
-const TWILIO_AUTH_TOKEN = "068b0c6cfc978afa81be10ac4dc3aa02";
+const TWILIO_ACOUNT_SID = "";
+const TWILIO_AUTH_TOKEN = "";
 
 export { STATUS, EMAIL, ADMIN, NAME_REGEX, EMAIL_REGEX, PASSWORD_REGEX, PHONE_REGEX};
